@@ -1,7 +1,8 @@
-from sudoku_solver import solve
 from dataclasses import dataclass
 from typing import List
+
 import pytest
+from solver import solve
 
 
 @dataclass
