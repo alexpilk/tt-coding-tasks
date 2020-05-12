@@ -30,7 +30,7 @@ Two lists are merged by comparing their first elements and adding them into a ne
 
 Two lists are merged in `O(n)`.
 Every merge cycle reduces number of lists by two, which results in `O(log k)`.  
-Overall time complexity is `O(n * k)` where n is the number f elements and k is the number of lists.
+Overall time complexity is `O(n * log k)` where n is the number f elements and k is the number of lists.
 
 ## Sudoku solver
 
@@ -40,7 +40,7 @@ Implemented algorithm works on easy to medium level sudokus.
 Fills in cells which have only one possible value based on values of vertical, horizontal and 33 section neighbors  
 
 #### Option search
-Checks all neighbors for possible solution and fills in given cell if one of it's possible solution is unique with regard to its neighbors.  
+Checks all neighbors for possible solution and fills in given cell if one of it's possible solution is unique with regard to its neighbors.
 For example, cell can be either 2 or 3, but on the horizontal line other cells can only be 1, 2 or 4. In this case current cell becomes 3.
 
 ### Algorithm
